@@ -1,0 +1,86 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html{
+    font-size: 16px;
+}
+
+header{
+    background:black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-family: 'Hanalei Fill', cursive;
+}
+
+main{
+    max-width:1000px;
+    margin:0 auto;
+    padding: 50px 20px;
+    position: relative;
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 4rem;
+    font-family: 'Hanalei Fill', cursive;
+}
+
+#players-cards,
+#dealers-cards{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+#players-cards div,
+#dealers-cards div{
+    box-sizing: border-box;
+    width:100px;
+    height:140px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin:10px;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn{
+    padding:10px;
+    color: red;
+    background-color: black;
+    border-radius: 3px;
+    border: 1px solid black;
+    outline: none;
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 1rem;
+    margin:0 10px 10px;
+
+}
+
+#dealers-cards div:first-child{
+    color:transparent;
+    background: url('card_back_red.png') no-repeat center center;
+    background-size: contain;
+}
+
+#result{
+    display:none;
+    font-family: 'Hanalei Fill', cursive;
+    color: red;
+    border: 3px dashed red;
+    transform: rotate(10deg);
+    padding: 10px 30px;
+    font-size: 2rem;
+    position:absolute;
+    top:50%;
+    right:35%;
+}

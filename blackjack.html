@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black Jack</title>
+    <link rel="stylesheet" type="text/css" href="blackjack-style.css">
+</head>
+<body>
+<header>
+    <h1>BLACKJACK</h1>
+</header>
+<main>
+    <div id="table">
+        <div id="player">
+            <h2>Player: <span id="players-scores"></span> scores</h2>
+            <button class="btn btn-start">Start game</button>
+            <button class="btn btn-get-card">Get a new card</button>
+            <button class="btn btn-end">End Game</button>
+            <div id="players-cards"></div>
+        </div>
+        <div id="dealer">
+            <h2>Dealer: <span id="dealers-scores"></span> scores</h2>
+            <div id="dealers-cards"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+</main>
+
+<script src="blackjack-OOP.js"></script>
+</body>
+</html>
